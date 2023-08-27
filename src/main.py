@@ -1,13 +1,23 @@
 # Complete your game here
+import pygame
+
 class CoinChaser:
     def init(self):
-        pass
+        pygame.init()
 
     def load_images(self):
-        pass
+        self.images = []
+        for name in ["coin", "door", "monster", "robot"]:
+            self.images.append(pygame.image.load(name + ".png"))
 
     def new_game(self):
-        self.map = []
+        self.map = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+                    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+                    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+                    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+                    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+                    [1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1],
+                    [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
 
     def main_loop(self):
         pass
@@ -16,7 +26,9 @@ class CoinChaser:
         pass
 
     def draw_window(self):
-        pass
+        self.window.fill((255, 255, 255))
+
+        
 
 
 CoinChaser()
