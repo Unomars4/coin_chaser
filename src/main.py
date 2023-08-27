@@ -1,5 +1,5 @@
 # Complete your game here
-class Sokoban:
+class CoinChaser:
     def init(self):
         pass
 
@@ -19,4 +19,4 @@ class Sokoban:
         pass
 
 
-Sokoban()
+CoinChaser()
