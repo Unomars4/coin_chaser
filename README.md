@@ -1,38 +1,26 @@
-![Logo of the project](https://raw.githubusercontent.com/jehna/readme-best-practices/master/sample-logo.png)
+# Coin Chaser
+> Collect bread
 
-# Sokoban
-> A small game made with pygame
-
-A brief description of your project, what it is used for and how does life get
-awesome when someone starts to use it.
+A small game made with pygame.
+The point is collect coins and avoid being caught by monster 
 
 ## Installing / Getting started
-
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
+To play the game you can fork or clone the repo locally
 
 ```shell
-packagemanager install awesome-project
-awesome-project start
-awesome-project "Do something!"  # prints "Nah."
+git clone unomars4/coin_chaser
+cd coin_chaser/src
+python main.py"
 ```
 
-Here you should say what actually happens when you execute the code above.
+On launch a pygame window should open and the game will start playing.
+You use the arrow keys to control the robot character
 
 ### Initial Configuration
 
-Some projects require initial configuration (e.g. access tokens or keys, `npm i`).
-This is the section where you would document those requirements.
+You'll require pygame to play the game.
+Run, pip install pygame
 
 ## Features
-
-What's all the bells and whistles this project can perform?
-* What's the main functionality
-* You can also do another thing
-* If you get really randy, you can even do this
-
-## Links
-
-
-## Licensing
-The code in this project is licensed under MIT license.
+* You can tell teleport using the doors in game
+* Also collect the coins by colliding with them. 
